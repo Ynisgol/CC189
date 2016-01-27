@@ -55,5 +55,6 @@ f.neighbors.add(b)
 b.neighbors.add(d)
 f.neighbors.add(a)
 d.neighbors.add(c)
-for node in topological_sort([a, b, c, d, e, f]):
-    print node.val,
+res = topological_sort([a, b, c, d, e, f])
+for nde in res:
+    print nde.val,
